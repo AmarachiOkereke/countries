@@ -4,27 +4,6 @@ import { useState } from "react";
 import './App.css';
 import RenderCountries from "./RenderCountries";
 
-// const formatNumber = (number) => {
-//   return number.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
-// };
-// const RenderCountries = (props) => {
-//   return props.countries.map((country, i) => {
-//     return (
-//       <div key={i} className="card-container">
-//         <div className="cards">
-//           <img src={country.flag} alt="flag" className="card-image" />
-//           <div className="card-content">
-//             <h3> {country.name}</h3>
-//             <p>Population: {formatNumber(country.population)}</p>
-//             <p>Region: {country.region}</p>
-//             <p>Capital: {country.capital}</p>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   });
-// };
-
 function filterCountries(inputValue){
   return countries.filter((country) => {
     return (
